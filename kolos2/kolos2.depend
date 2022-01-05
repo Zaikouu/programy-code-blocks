@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1638380163 source:e:\programy-code-blocks\kolos2\main.cpp
+	<iostream>
+	<ctime>
+
