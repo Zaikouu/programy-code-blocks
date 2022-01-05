@@ -22,6 +22,8 @@ int czypin(char pin[])
         return 0;
     for(int i=0;i<5;++i)
     {
+        if(pin[i]<0 || pin[i]>9)
+            return 0;
         if(pin[i]==pin[i+1])
             return 0;
         return 1;

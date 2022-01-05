@@ -12,18 +12,13 @@ int main()
 }
 void nominal(int kwota)
 {
-    int nominaly[9]={500,200,100,50,20,10,5,2,1};
-    int i=0, ile;
-    cout<<"Nominaly potrzebne do wyplacenia kwoty: "<<kwota<<endl;
-    while(kwota>=0 && i<9)
+    int nominal[9]={500,200,100,50,20,10,5,2,1};
+    int ile;
+    for(int i=0;i<9;++i)
     {
-        ile=0;
-        while(kwota>=nominaly[i])
-        {
-            ile++;
-            kwota-=nominaly[i];
-        }
-        cout<<nominaly[i]<<"-"<<ile<<endl;
-        i++;
+        ile=kwota/nominal[i];
+        cout<<nominal[i]<<"\t"<<ile<<endl;
+        kwota%=nominal[i];
     }
+
 }

@@ -11,7 +11,9 @@ int main()
     cin>>znak1;
     cout<<"Podaj znak po zmianie: ";
     cin>>znak2;
+    cout<<"Napis przed zamiana: "<<napis<<endl;
     zamiana(napis,znak1,znak2);
+    cout<<"Napis po zamianie: "<<napis;
     return 0;
 }
 void zamiana(char napis[],char znak1,char znak2)
@@ -22,6 +24,5 @@ void zamiana(char napis[],char znak1,char znak2)
     {
         if(napis[i]==znak1)
             napis[i]=znak2;
-        cout<<napis[i];
     }
 }
